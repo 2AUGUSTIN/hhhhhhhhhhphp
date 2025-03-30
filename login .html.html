@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+   *{
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+background:white;
+
+line-height: 1.6;
+}
+
+
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #333;
+padding: 15px 30px;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+.nav a {
+color: #a72020;
+text-decoration: none;
+padding: 12px 20px;
+font-size: 18px;
+transition: background-color 0.3s ease;
+border-radius: 4px;
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="homepage.html" method="POST">
+            <div class="input-group">
+                <label for="username">Username or Email</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+
+        <div class="form-footer">
+            <p>Don't have an account? <a href="/signup">Sign up</a></p>
+        </div>
+    </div>
+</body>
+</html>
